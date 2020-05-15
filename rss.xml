@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Geek IT Blog]]></title><description><![CDATA[Blog for geek people]]></description><link>https://coziboy.github.io/blog</link><image><url>https://coziboy.github.io/blog/icons/icon-512x512.png</url><title>Geek IT Blog</title><link>https://coziboy.github.io/blog</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 17:45:13 GMT</lastBuildDate><atom:link href="https://coziboy.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cara Memasang Tools Auto Claim Faucet di Termux]]></title><description><![CDATA[Tools termux untuk auto claim faucet dari Expresscrypto.]]></description><link>https://coziboy.github.io/blog/cara-memasang-tools-auto-claim-faucet-di-termux</link><guid isPermaLink="false">https://coziboy.github.io/blog/cara-memasang-tools-auto-claim-faucet-di-termux</guid><dc:creator><![CDATA[Coziboy]]></dc:creator><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;title&quot;: &quot;Cara Memasang Tools Auto Claim Faucet di Termux&quot;,
+  &quot;author&quot;: &quot;Coziboy&quot;,
+  &quot;date&quot;: &quot;2020-05-15T00:00:00.000Z&quot;,
+  &quot;hero&quot;: &quot;./images/cover.jpg&quot;,
+  &quot;excerpt&quot;: &quot;Tools termux untuk auto claim faucet dari Expresscrypto.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;Selamat datang di blog &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Geek IT&quot;), &quot;, sebuah blok untuk anda &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;geek people&quot;)), &quot; untuk mencoba hal-hal seputar dunia &quot;, mdx(&quot;inlineCode&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;coding&quot;), &quot;.&quot;), mdx(&quot;p&quot;, null, &quot;Jadi di postingan kali ini, saya akan membahas mengenai tools untuk nuyul &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Expresscrypto&quot;), &quot; menggunakan &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;auto claim faucet&quot;)), &quot;.&quot;), mdx(&quot;p&quot;, null, &quot;Jadi konsep dari aplikasi ini yaitu kalian tinggal memasukkan &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Expresscrypto address&quot;)), &quot;, &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;currency&quot;)), &quot; yang ingin didapatkan, sama &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;key auto claim faucet&quot;)), &quot;-nya.&quot;), mdx(&quot;p&quot;, null, &quot;Langsung aja kita bahas langkah-langkahnya!&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;persiapan-akun&quot;
+  }, &quot;Persiapan Akun&quot;), mdx(&quot;p&quot;, null, &quot;Kemudian langkah selanjutnya adalah membuat akun di &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2yQIXMw&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Expresscrypto&quot;), &quot;.&quot;), mdx(&quot;p&quot;, null, &quot;Setelah kalian mendaftarkan diri di &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2yQIXMw&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Expresscrypto&quot;), &quot;, kalian akan mendapatkan &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Unique ID&quot;)), &quot; yang dapat digunakan untuk &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;nuyul&quot;), &quot; di Web Auto Faucet.&quot;), mdx(&quot;p&quot;, null, &quot;Nah untuk Web Auto Faucet, saya menggunakan Web Auto Faucet dari &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2AoALmP&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Dutchybig&quot;), &quot;.&quot;), mdx(&quot;p&quot;, null, &quot;Kemudian di &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2AoALmP&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Dutchybig&quot;), &quot;, kalian masukkan captcha, &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2yQIXMw&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Expresscrypto&quot;), &quot; ID yang tadi sudah didapatkan, dan &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;currency&quot;), &quot; yang diinginkan.&quot;), mdx(&quot;div&quot;, {
+    &quot;className&quot;: &quot;Image__Small&quot;
+  }, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;div&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-wrapper&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;display&quot;: &quot;block&quot;,
+      &quot;marginLeft&quot;: &quot;auto&quot;,
+      &quot;marginRight&quot;: &quot;auto&quot;,
+      &quot;maxWidth&quot;: &quot;806px&quot;
+    }
+  }), &quot;\n      &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-background-image&quot;,
+    &quot;style&quot;: {
+      &quot;paddingBottom&quot;: &quot;71.58808933002481%&quot;,
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;bottom&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;,
+      &quot;backgroundImage&quot;: &quot;url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAACWElEQVQoz42Sa2vTYBTHn87aJM2tbZI2vbdDqFY/hvhW/Ahb7dolabO06WXM+gEERUVFYUyYHXhFCoIgCNMXAwf6whcWFCzWMoa6rtipxc7Gk9bBpiKGH4dD8vzP+eecB03TzqLXXxB9QN7tyQmeHOfO8e68W4SoccJONJM87zGj4Mm7vRmKRhLLlQLBUihS8PpVxqGyzt3MOFwqYCZmPuPkzDh8KeN2BJ11aALFzHpiwesr+AI6uBCEPM/poqiDHY7XXMPOArjgc5ygOTnJhiOJcZVDkaI/WAqGoTmIddELtTQHpTKESmIqicsYIVmxLEmb1gCaBRSCRJKDmw1Hy5HxcjhSCoWLgRDESiw2Gz1wKhavxI9UDh0exrjm4k3bLt5MHJwpTmJ2BSfgBwDFTiURql043+hu1ZuNt512a7vX7H1ZM/pv1lvFQDBl2SfbcGk/BoAdlLTZFYyQhygElULo1sX5Wt24v9qtPf/aNgbtwaBjGM2NTzDU9JhVgTY75/eK7aZ46ezV+eVB9fHHpeXNe886D192b65srbxqzY1H0pZ/ik8i9ODK5Xfff9TXNl5/6L5odO88at192l6tv5+L/k0s2zCYOwDiBEJPFq4bhrHd7xvD53Pv26ZhrLfbMNffbU9h5AzDZmkWVp+lmBQaO3f02G29UJXkqqwsTss3JGVRUhYmEnBgNKddYpzUPaK5+uEFgOZTVusEQpN7SSDLaB0jMiQNEaVw6vTBeCkYgnsDO8sQZJaiVZr5E/j0C5yECwOgJMVemkxcU7Uzx09Idur/SWPET07Z86UZneHPAAAAAElFTkSuQmCC&apos;)&quot;,
+      &quot;backgroundSize&quot;: &quot;cover&quot;,
+      &quot;display&quot;: &quot;block&quot;
+    }
+  })), &quot;\n  &quot;, mdx(&quot;picture&quot;, {
+    parentName: &quot;span&quot;
+  }, &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/blog/static/d3f9555fa262da6fc275da0d0bacf765/d1473/Screenshot_2020-05-15_23-50-28.webp 806w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 806px) 100vw, 806px&quot;,
+    &quot;type&quot;: &quot;image/webp&quot;
+  })), &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/blog/static/d3f9555fa262da6fc275da0d0bacf765/59a8d/Screenshot_2020-05-15_23-50-28.png 806w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 806px) 100vw, 806px&quot;,
+    &quot;type&quot;: &quot;image/png&quot;
+  })), &quot;\n        &quot;, mdx(&quot;img&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-image&quot;,
+    &quot;src&quot;: &quot;/blog/static/d3f9555fa262da6fc275da0d0bacf765/59a8d/Screenshot_2020-05-15_23-50-28.png&quot;,
+    &quot;alt&quot;: &quot;Pengisian Dutchybig&quot;,
+    &quot;title&quot;: &quot;Pengisian Dutchybig&quot;,
+    &quot;loading&quot;: &quot;lazy&quot;,
+    &quot;style&quot;: {
+      &quot;width&quot;: &quot;100%&quot;,
+      &quot;height&quot;: &quot;100%&quot;,
+      &quot;margin&quot;: &quot;0&quot;,
+      &quot;verticalAlign&quot;: &quot;middle&quot;,
+      &quot;position&quot;: &quot;absolute&quot;,
+      &quot;top&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;
+    }
+  })), &quot;\n      &quot;), &quot;\n    &quot;)), mdx(&quot;p&quot;, null, &quot;Selamat, anda berhasil mendapatkan &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;tuyul&quot;)), &quot; yang bisa anda eksploitasi (LOL).&quot;), mdx(&quot;p&quot;, null, &quot;Simpan alamat url dari web auto faucet setelah di isi dengan &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2yQIXMw&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Expresscrypto&quot;), &quot; ID kalian ya, karena link tersebut akan digunakan pada langkah selanjutnya.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;cara-memasang-tools-auto-claim-faucet---expresscrypto-termux&quot;
+  }, &quot;Cara Memasang Tools Auto Claim Faucet - Expresscrypto Termux&quot;), mdx(&quot;p&quot;, null, &quot;Bahan-bahan yang perlu di siapkan: &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://play.google.com/store/apps/details?id=com.termux&amp;hl=en&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Termux&quot;)), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Install termux melalui link yang telah disediakan di atas&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Jalankan perintah dibawah baris per baris:&quot;)), mdx(&quot;pre&quot;, null, mdx(&quot;code&quot;, _extends({
+    parentName: &quot;pre&quot;
+  }, {
+    &quot;className&quot;: &quot;language-bash&quot;
+  }), &quot;pkg install git bash -y\ngit clone https://github.com/coziboy/termux-mining.git\ncd ~/termux-mining\nbash setup.sh\n&quot;)), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Tools telah berhasil di install!!!&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;cara-menggunakan-tools&quot;
+  }, &quot;Cara Menggunakan tools&quot;), mdx(&quot;p&quot;, null, &quot;Berikut cara menggunakan tools tersebut:&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Ketikkan perintah berikut di Termux&quot;)), mdx(&quot;pre&quot;, null, mdx(&quot;code&quot;, _extends({
+    parentName: &quot;pre&quot;
+  }, {
+    &quot;className&quot;: &quot;language-bash&quot;
+  }), &quot;mine\n&quot;)), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Ketika anda baru menggunakan tools pertama kalinya, maka akan muncul menu untuk membuat config. Lakukan pengisian sebagai berikut:&quot;)), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;inlineCode&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Expresscrypto Address: &quot;)), &quot; isi dengan Alamat &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2yQIXMw&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Expresscrypto&quot;), &quot; kalian. Contoh: EC-UserId-85xxx&quot;), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;inlineCode&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Currency :&quot;)), &quot; isi dengan currency yang anda inginkan. Untuk list currency yang bisa digunakan silahkan lihat di website &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2AoALmP&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Dutchybig&quot;)), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, mdx(&quot;inlineCode&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Key :&quot;)), &quot; isi dengan key yang anda dapatkan dari website &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://bit.ly/2AoALmP&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Dutchybig&quot;)), mdx(&quot;p&quot;, null, &quot;Berikut penjelasannya disertai dengan gambar:&quot;), mdx(&quot;div&quot;, {
+    &quot;className&quot;: &quot;Image__Small&quot;
+  }, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;div&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-wrapper&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;display&quot;: &quot;block&quot;,
+      &quot;marginLeft&quot;: &quot;auto&quot;,
+      &quot;marginRight&quot;: &quot;auto&quot;,
+      &quot;maxWidth&quot;: &quot;1225px&quot;
+    }
+  }), &quot;\n      &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-background-image&quot;,
+    &quot;style&quot;: {
+      &quot;paddingBottom&quot;: &quot;4.979591836734694%&quot;,
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;bottom&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;,
+      &quot;backgroundImage&quot;: &quot;url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAARklEQVQI1yXF0Q2AIAxAQfcRS1uCIFX338n4Iokfl1ty9tfLTuuBeUWyoVoQc9YhpKHIpaRi+KbcYrRqxDnF/widjH7I8wHtzR/yQMJdkAAAAABJRU5ErkJggg==&apos;)&quot;,
+      &quot;backgroundSize&quot;: &quot;cover&quot;,
+      &quot;display&quot;: &quot;block&quot;
+    }
+  })), &quot;\n  &quot;, mdx(&quot;picture&quot;, {
+    parentName: &quot;span&quot;
+  }, &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/blog/static/a8cab9863e0621e7f9e9a19ad3d850aa/4a57c/Screenshot_2020-05-16_00-06-49.png.webp 1225w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 1225px) 100vw, 1225px&quot;,
+    &quot;type&quot;: &quot;image/webp&quot;
+  })), &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/blog/static/a8cab9863e0621e7f9e9a19ad3d850aa/49149/Screenshot_2020-05-16_00-06-49.png.png 1225w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 1225px) 100vw, 1225px&quot;,
+    &quot;type&quot;: &quot;image/png&quot;
+  })), &quot;\n        &quot;, mdx(&quot;img&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-image&quot;,
+    &quot;src&quot;: &quot;/blog/static/a8cab9863e0621e7f9e9a19ad3d850aa/49149/Screenshot_2020-05-16_00-06-49.png.png&quot;,
+    &quot;alt&quot;: &quot;Pengisian Dutchybig&quot;,
+    &quot;title&quot;: &quot;Pengisian Dutchybig&quot;,
+    &quot;loading&quot;: &quot;lazy&quot;,
+    &quot;style&quot;: {
+      &quot;width&quot;: &quot;100%&quot;,
+      &quot;height&quot;: &quot;100%&quot;,
+      &quot;margin&quot;: &quot;0&quot;,
+      &quot;verticalAlign&quot;: &quot;middle&quot;,
+      &quot;position&quot;: &quot;absolute&quot;,
+      &quot;top&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;
+    }
+  })), &quot;\n      &quot;), &quot;\n    &quot;)), mdx(&quot;p&quot;, null, &quot;Penjelasan:&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;p&quot;, {
+    style: {
+      &quot;color&quot;: &quot;green&quot;
+    }
+  }, &quot;Expresscrypto Address&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;p&quot;, {
+    style: {
+      &quot;color&quot;: &quot;red&quot;
+    }
+  }, &quot;Currency&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;p&quot;, {
+    style: {
+      &quot;color&quot;: &quot;yellow&quot;
+    }
+  }, &quot;Dutchybig Key&quot;))), mdx(&quot;p&quot;, null, &quot;Lalu anda diminta untuk mengisi nama config yang anda buat.&quot;), mdx(&quot;p&quot;, null, &quot;Yap, anda telah berhasil membuat config &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Tools Auto Claim Faucet - Expresscrypto Termux&quot;), &quot;.&quot;), mdx(&quot;p&quot;, null, &quot;Untuk langkah selanjutnya yaitu anda tinggal memilih menu &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;1) Mining&quot;), &quot; atau &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;2) Buat Config Baru&quot;), &quot; dengan memasukkan angka pilihan menu (1 atau 2).&quot;), mdx(&quot;p&quot;, null, &quot;Apabila anda memilih angka 1, maka akan muncul daftar config yang telah anda buat, dan apabila anda memilih angka 2 maka anda akan melakukan proses pembuatan config lagi seperti yang telah dijelaskan di atas.&quot;), mdx(&quot;p&quot;, null, &quot;Sekian postingan saya mengenai &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Tools Auto Claim Faucet - Expresscrypto Termux&quot;), &quot;, semoga bermanfaat!&quot;));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item></channel></rss>
