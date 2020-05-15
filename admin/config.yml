@@ -1,6 +1,10 @@
 backend: # Set up your backend
   name: github
   repo: coziboy/blog
+  branch: gh-pages
+  site_domain: coziboy.github.io/blog
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 local_backend: true # Optional if you want to use the local proxy mode
 
