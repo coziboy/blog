@@ -5,11 +5,12 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "test": "echo \"no test specified\" && exit 0",
     "dev": "gatsby develop",
     "clean": "gatsby clean",
     "proxy": "netlify-cms-proxy-server",
     "develop": "NODE_ENV=development gatsby develop",
-    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@narative/gatsby-theme-novela": "^0.*",
