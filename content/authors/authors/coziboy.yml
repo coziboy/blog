@@ -1,0 +1,9 @@
+name: Coziboy
+bio: |
+  Geek sect leader
+avatar: ./avatars/coziboy.png
+featured: true
+social:
+  - url: https://twitter.com/coziboy
+  - url: https://instagram.com/eas.andreas
+  - url: https://github.com/coziboy
