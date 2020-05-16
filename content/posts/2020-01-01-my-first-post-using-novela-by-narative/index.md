@@ -1,6 +1,6 @@
 ---
 title: Cara Memasang Tools Auto Claim Faucet di Termux
-author: Coziboy
+author: Andreas Asatera
 date: 2020-05-15T00:00:00.000Z
 excerpt: Tools termux untuk auto claim faucet dari Expresscrypto.
 hero: ./images/cover.jpg
