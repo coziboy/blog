@@ -9,7 +9,7 @@ Selamat datang di blog **Geek IT**, sebuah blog yang dibuat demi anda ***geek pe
 
 Jadi di postingan ini, saya akan membahas mengenai tools untuk nuyul **Expresscrypto** menggunakan ***auto claim faucet***.
 
-Jadi konsep dari aplikasi ini yaitu kalian tinggal memasukkan ***Expresscrypto address***, ***currency*** yang ingin didapatkan, sama ***key auto claim faucet***-nya.
+Jadi konsep dari aplikasi ini yaitu kalian tinggal memasukkan ***Expresscrypto address***, ***currency*** yang ingin didapatkan, sama ***key auto claim faucet***-nya, dan tools secara otomatis akan bekerja untuk anda.
 
 Langsung aja kita bahas langkah-langkahnya!
 
@@ -51,7 +51,7 @@ bash setup.sh
 
 Berikut cara menggunakan tools tersebut:
 
-* Ketikkan perintah berikut di Termux:
+* Ketikkan perintah berikut di Termux
 
 ```bash
 mine
