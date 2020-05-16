@@ -1,7 +1,8 @@
 backend: # Set up your backend
   name: github
   repo: coziboy/blog
-  site_domain: happy-nightingale-ac9f7d.netlify.app/
+  branch: gh-pages
+  site_domain: happy-nightingale-ac9f7d.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: media    # I'm not using these default media directories at the moment.
